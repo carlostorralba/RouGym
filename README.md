@@ -1,32 +1,14 @@
-# PadelSort
+# RouGym
 ## Proyecto de prácticas CC
-Sistema para la gestión de clubs de pádel y jugadores.
+RouGym (Routine Gym) será un sistema de recomendación de rutinas de entrenamiento. 
 
 [Configuración de entorno](https://github.com/carlostorralba/padelSort/blob/main/doc/config/hito0.md)
-### Problema
-Hoy en día no se disponen de muchas aplicaciones o webs para la gestión de clubs pádel y jugadores de pádel. 
-Un club de pádel no dispone de la suficiente acerca de los jugadores de pádel que habitualmente juegan en el club o posibles nuevos jugadores, esta información que quiere conocer el club de pádel corresponde al nombre completo, *el nivel o categoría* del jugador y la zona en la que juega el jugador. Los clubes de pádel quieren esta información para llevar un recuento socios. 
-A su vez los jugadores de pádel quieren conocer las categorías que se juegan en el club de pádel como el lugar y el porcentaje de jugadores por cada categoría.
 
-Las categorías y niveles en relación al mundo del pádel pueden variar de un club a otro, es decir, es posible que un club de Granada tenga cinco categorías, siendo la 1º categoría la de mayor nivel, y otro club de Madrid tenga 7º categorías, siendo la 7º la de mayor nivel
+### Problema
+En la actualidad muchas personas que quieren ir o van al gimnasio suelen tener problemas a la hora de encontrar una rutina de entrenamiento óptima acorde con sus características. Muchos de los gimnasios suelen disponer de rutinas de entrenamiento genéricas pero estas rutinas no se adaptan a las características de cada persona. Por esto muchas personas se ven obligadas a contratar a un entrenador personal para que les realice una rutina de entrenamiento personalizada.
 
 ### Solución
+Por ello se propone un sistema de recomendación de rutinas de entrenamiento en el cual a partir de las características del usuario, como el tipo de entramiento que quiera, experiencia en gimnasios y sus atributos físicos, se le recomendarán un tipo de rutinas u otras.  Los usuarios podrán publicar sus rutinas y que estas a su vez podrán ser seguidas por otros usuarios. El sistema incluirá un sistema de cobro para acceder a determinadas rutinas, es decir, las rutinas con un elevado número de seguidores tendrán un importe para acceder a ellas.
 
-Por ello se propone implementar un sistema que sea capaz de llevar la gestión de los clubs de pádel así como permita a los jugadores de pádel registrarse en clubs de pádel.
-Para el registro de un club de pádel será necesario conocer los siguientes datos:
- * Lugar
- * Números de teléfonos
- * Categorías
- * Porcentaje de jugadores por cada categoría.
-
-Esta información del club de pádel le será muy útil al jugador de pádel que quiera incribirse en el club ya que podrá decidir que club de pádel es mejor para sus carácteristicas a su vez también le será útil al jugador de pádel que ya es socio de un club de pádel para ver como avanza el porcentaje de jugadores por cada categoría y de esta manera si el sube de nivel o baja tendrá la opción de inscribirse en otro club el cual mejore las condiciones de este.
-
-Para el registro de un jugador de pádel será necesario conocer los siguientes datos:
-* Nombre completo
-* Nombre de usuario (opcional)
-* Número de teléfono (opcional)
-* Nivel de pádel asociado a cada club.
-* Zona en la que suele jugar frecuentemente.
-
-Esta información será valiosa para el club de pádel ya que podrá llevar un registro de sus jugadores y de esta manera contabilizarlos y agruparlos por categorías. Todos estos datos son importantes pero sobre los datos del nivel de pádel ya que permite clasificar al jugador así como la zona en la que juega para que el club sepa si es un jugador que estará de paso o es posible que sea un cliente fijo. El jugador de pádel podrá inscribirse en cuantos club de pádel quiera y a su vez tendrá asociado un nivel de pádel por cada club debido a que el nivel en cada club varía. En el caso de que un jugador se registre en el sistema deberá introducir obligatorimente los datos de su nombre completo y la zona en la que suele jugar y por consiguiente si se quiere registrar en un club de pádel se le solicitará una prueba de nivel con el club de pádel para determinar el nivel del jugador en ese club.
-
+### Beneficio
+Este sistema será beneficioso para todos los tipos de personas que van al gimnasio ya que podrán encontrar una rutina acorde con sus características y necesidades sin tener que perder mucho tiempo buscando por internet y sin tener que contratar a un entrenador personal para la realización de una rutina personalizada. A su vez los usuarios los cuales tengan rutinas con un elevado número de seguidores recibirán una ayuda económica por ello.
