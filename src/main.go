@@ -35,4 +35,17 @@ func main()  {
 	routine.Trainings = append(routine.Trainings, training)
 
 	//fmt.Println(routine.Trainings[0].Name)
+
+	user := classes.User {
+		Name: "Pepe",
+		Routines: []classes.Routine{},
+	}
+
+
+	user.Routines = append(user.Routines, routine)
+
+	//fmt.Println(user.Routines[0].Name)
+
+
+
 }
