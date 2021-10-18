@@ -4,6 +4,8 @@ RouGym (Routine Gym) será un sistema de recomendación de rutinas de entrenamie
 
 [Configuración de entorno](https://github.com/carlostorralba/padelSort/blob/main/doc/config/hito0.md)
 
+[Documentación adicional hito 1](https://github.com/carlostorralba/RouGym/blob/hito1/doc/hito1.md)
+
 ### Problema
 En la actualidad muchas personas que quieren ir o van al gimnasio suelen tener problemas a la hora de encontrar una rutina de entrenamiento óptima acorde con sus características. Muchos de los gimnasios suelen disponer de rutinas de entrenamiento genéricas pero estas rutinas no se adaptan a las características de cada persona. Por esto muchas personas se ven obligadas a contratar a un entrenador personal para que les realice una rutina de entrenamiento personalizada.
 
