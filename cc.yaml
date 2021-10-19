@@ -1,0 +1,5 @@
+Routines: src/classes/routine.go
+Training: src/classes/training.go
+Exercise: src/classes/exercise.go
+User: src/classes/user.go
+main: src/main.go
