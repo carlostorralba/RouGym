@@ -14,11 +14,6 @@ Otro problema es que los usuarios no tienen un historial de las rutinas utilizad
 ### Solución
 Por ello se propone un sistema de recomendación de rutinas de entrenamiento en el cual a partir de las características del usuario, como el tipo de entrenamiento que quiera, experiencia en gimnasios y sus atributos físicos, se le recomendarán un tipo de rutinas u otras.  Los usuarios podrán publicar sus rutinas y que estas a su vez podrán ser seguidas por otros usuarios. El sistema incluirá un sistema de cobro para acceder a determinadas rutinas, es decir, las rutinas con un elevado número de seguidores tendrán un importe para acceder a ellas. Los usuarios los cuales contengan rutinas con un elevado número de seguidores recibirán un beneficio económico. 
 
-Con respecto a lo anterior los usuarios únicamente podrán crear como máximo dos rutinas, en caso de que el usuario desee añadir más rutinas deberá efectuar un pago por ello.
-
-El sistema le proporcionará también al usuario un historial de las rutinas utilizadas, es decir, se le mostrará a través de una gráfica del tipo de rutinas utilizadas a lo largo del tiempo para que pueda visualizar su progreso.
-
-
 ### Beneficio
 Este sistema será beneficioso para todos los tipos de personas que van al gimnasio ya que podrán encontrar una rutina acorde con sus características y necesidades sin tener que perder mucho tiempo buscando por internet y sin tener que contratar a un entrenador personal para la realización de una rutina personalizada. A su vez los usuarios los cuales tengan rutinas con un elevado número de seguidores recibirán una beneficio económico por ello.
 
