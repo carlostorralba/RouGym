@@ -1,6 +1,6 @@
 package rutina
 
 type Entrenamiento struct {
-	Name string
+	Nombre string
 	Ejercicios []Ejercicio
 }
