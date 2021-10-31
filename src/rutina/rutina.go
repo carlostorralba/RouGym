@@ -32,11 +32,17 @@ func AddRutina(w http.ResponseWriter, r *http.Request) {
 
 	rutinas = append(rutinas, rutina)
 
-	almacenarRutinaJson()
-
 	w.Header().Set("Content-Type", "application/json")
 
-	json.NewEncoder(w).Encode("Rutina almacenada correctamente")
+	validaciones := validacionRutinas(rutina)
+
+	if len(validaciones) > 0 {
+		json.NewEncoder(w).Encode(validaciones)
+
+	} else {
+		almacenarRutinaJson()
+		json.NewEncoder(w).Encode("Rutina almacenada correctamente")
+	}
 
 }
 
@@ -50,4 +56,27 @@ func almacenarRutinaJson() {
 	if err != nil {
 		panic(err)
 	}
+}
+
+func validacionRutinas(rutina Rutina) []string {
+
+	errores := []string{}
+
+	if rutina.Nombre == "" {
+		errores = append(errores, "Debe introducir un nombre de rutina")
+	}
+	if rutina.Dias_Entrenamiento <= 0 || rutina.Dias_Entrenamiento >= 7 {
+		errores = append(errores, "Los días de entrenamiento tienen que ser entre 1-6 días")
+	}
+	if rutina.Tipo < 0 || rutina.Tipo > 4 {
+		errores = append(errores, "El tipo de entrenamiento seleccionado no es válido")
+	}
+	if rutina.Duracion < 0 || rutina.Duracion > 13 {
+		errores = append(errores, "La duración de la rutina tiene que estar entre 3-12 meses")
+	}
+	if len(rutina.Entrenamientos) != rutina.Dias_Entrenamiento {
+		errores = append(errores, "El número de entrenamientos no correponde con los días de entrenamiento")
+	}
+
+	return errores
 }
