@@ -65,7 +65,7 @@ func validacionRutinas(rutina Rutina) []string {
 	if rutina.Nombre == "" {
 		errores = append(errores, "Debe introducir un nombre de rutina")
 	}
-	if rutina.Dias_Entrenamiento <= 0 || rutina.Dias_Entrenamiento >= 7 {
+	if rutina.Dias_Entrenamiento < 0 || rutina.Dias_Entrenamiento > 7 {
 		errores = append(errores, "Los días de entrenamiento tienen que ser entre 1-6 días")
 	}
 	if rutina.Tipo < 0 || rutina.Tipo > 4 {
@@ -76,6 +76,10 @@ func validacionRutinas(rutina Rutina) []string {
 	}
 	if len(rutina.Entrenamientos) != rutina.Dias_Entrenamiento {
 		errores = append(errores, "El número de entrenamientos no correponde con los días de entrenamiento")
+	} else {
+		for _, entrenamiento := range rutina.Entrenamientos {
+			errores = append(errores, validacionEntrenamiento(entrenamiento)...)
+		}
 	}
 
 	return errores
