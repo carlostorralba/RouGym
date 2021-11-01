@@ -36,7 +36,7 @@ func AddRutina(w http.ResponseWriter, r *http.Request) {
 
 	validaciones := validacionRutinas(rutina)
 
-	if len(validaciones) > 0 {
+	if len(validaciones.Rutina) > 0 || len(validaciones.Entrenamientos) > 0 || len(validaciones.Ejercicios) > 0 {
 		json.NewEncoder(w).Encode(validaciones)
 
 	} else {
@@ -58,27 +58,30 @@ func almacenarRutinaJson() {
 	}
 }
 
-func validacionRutinas(rutina Rutina) []string {
+func validacionRutinas(rutina Rutina) Error {
 
-	errores := []string{}
+	var errores Error
 
 	if rutina.Nombre == "" {
-		errores = append(errores, "Debe introducir un nombre de rutina")
+		errores.Rutina = append(errores.Rutina, "Debe introducir un nombre de rutina")
 	}
 	if rutina.Dias_Entrenamiento < 0 || rutina.Dias_Entrenamiento > 7 {
-		errores = append(errores, "Los días de entrenamiento tienen que ser entre 1-6 días")
+		errores.Rutina = append(errores.Rutina, "Los días de entrenamiento tienen que ser entre 1-6 días")
 	}
 	if rutina.Tipo < 0 || rutina.Tipo > 4 {
-		errores = append(errores, "El tipo de entrenamiento seleccionado no es válido")
+		errores.Rutina = append(errores.Rutina, "El tipo de entrenamiento seleccionado no es válido")
 	}
 	if rutina.Duracion < 0 || rutina.Duracion > 13 {
-		errores = append(errores, "La duración de la rutina tiene que estar entre 3-12 meses")
+		errores.Rutina = append(errores.Rutina, "La duración de la rutina tiene que estar entre 3-12 meses")
 	}
 	if len(rutina.Entrenamientos) != rutina.Dias_Entrenamiento {
-		errores = append(errores, "El número de entrenamientos no correponde con los días de entrenamiento")
+		errores.Rutina = append(errores.Rutina, "El número de entrenamientos no correponde con los días de entrenamiento")
 	} else {
 		for _, entrenamiento := range rutina.Entrenamientos {
-			errores = append(errores, validacionEntrenamiento(entrenamiento)...)
+			errores.Entrenamientos = append(errores.Entrenamientos, validacionEntrenamiento(entrenamiento)...)
+			for _, ejercicio := range entrenamiento.Ejercicios {
+				errores.Ejercicios = append(errores.Ejercicios, validacionEjercicio(ejercicio)...)
+			}
 		}
 	}
 
