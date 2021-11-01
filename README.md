@@ -2,11 +2,11 @@
 ## Proyecto de prácticas CC
 RouGym (Routine Gym) será un sistema de recomendación de rutinas de entrenamiento. 
 
-[Configuración de entorno](https://github.com/carlostorralba/padelSort/blob/main/doc/config/hito0.md)
+[Configuración de entorno](https://github.com/carlostorralba/padelSort/blob/main/doc/config/entorno.md)
 
-[User Journey y milestones](https://github.com/carlostorralba/RouGym/blob/hito1/doc/hito1.md)
+[User Journey y milestones](https://github.com/carlostorralba/RouGym/blob/main/doc/UserJourney_Milestones.md)
 
-[Explicación proyecto](https://github.com/carlostorralba/RouGym/blob/main/doc/proyecto.md)
+[Explicación proyecto](https://github.com/carlostorralba/RouGym/blob/main/doc/Explicacion_Proyecto.md)
 
 ### Lógica de negocio
 
