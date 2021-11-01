@@ -2,11 +2,15 @@
 ## Proyecto de prácticas CC
 RouGym (Routine Gym) será un sistema de recomendación de rutinas de entrenamiento. 
 
-[Configuración de entorno](https://github.com/carlostorralba/padelSort/blob/main/doc/config/entorno.md)
+### Configuración entorno
+[Configuración](https://github.com/carlostorralba/padelSort/blob/main/doc/config/entorno.md) :hammer_and_wrench:	
 
+
+### User Journey y milestones
 [User Journey y milestones](https://github.com/carlostorralba/RouGym/blob/main/doc/UserJourney_Milestones.md)
 
-[Explicación proyecto](https://github.com/carlostorralba/RouGym/blob/main/doc/Explicacion_Proyecto.md)
+### Explicación proyecto
+[Explicación](https://github.com/carlostorralba/RouGym/blob/main/doc/Explicacion_Proyecto.md) :books:
 
 ### Lógica de negocio
 
@@ -22,5 +26,9 @@ Este sistema será beneficioso para la nube ya que podrá haber múltiples usuar
 
 ### Lenguaje
 Se va utilizar el lenguaje Go porque es un lenguaje compilado de código abierto, que está orientado a objetos y es mutiplataforma. He escogido este lenguaje ya que lo he utilizado en una asignatura de mi carrera y quiero ampliar conocimientos en él.
+
+### Gestor tareas 
+El gestor de tareas escogido es [**Task**](https://taskfile.dev/#/), se ha escogido este gestor debido a que es uno de los [más utilizados](https://awesomeopensource.com/projects/task-runner) en los proyectos GO y a su vez esta implementado en este mismo lenguaje. Otra característica que tiene es que pretende tener una simplicidad y facilidad de uso mejores que ***GNU Make***. Un aspecto importante en la elección de este gestor,  ha sido la buena documentación que contiene para facilitar su uso y aprendizaje.
+
 
 
