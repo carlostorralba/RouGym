@@ -1,0 +1,23 @@
+version: '3'
+
+tasks:
+  exec:
+    desc: Ejecuta el ejecutable generado
+    deps: [get ,build]
+    cmds: 
+      - ./rougym.exe
+
+  build: 
+    desc: Construye un ejecutable del proyecto
+    deps: [get]
+    cmds:
+      - go build . 
+  run:
+    desc: Ejecuta el proyecto
+    deps: [get]
+    cmds:
+      - go run .
+  get:
+    desc: Obtiene las librerías necesarias para la ejecución del proyecto
+    cmds:
+       - go get .
