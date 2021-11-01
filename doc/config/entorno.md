@@ -1,4 +1,4 @@
-# Configuración del entorno hito 0
+# Configuración del entorno
 ## Creación de claves SSH y subida a GitHub
 Para está configuración se han seguido los pasos de está página de Github Docs: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 ### Creación de claves SSH
