@@ -1,3 +1,4 @@
-Rutina: src/rutina/rutina.go
-Entrenamiento: src/rutina/entrenamiento.go
-Ejercicio: src/rutina/ejercicio.go
+Entidad: 
+  - src/rutina/rutina.go
+  - src/rutina/entrenamiento.go
+  - src/rutina/ejercicio.go
